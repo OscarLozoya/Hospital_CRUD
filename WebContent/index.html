@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="CSS/bootstrap.min.css">
+<link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Employee CRUD plus AJAX</h1>
+			<h2>Build Page wait...</h2>
+		</div>
+		<div class="btn-group">
+			<input type="button" class="btn btn-success"  value="Search">
+			<input type="button" class="btn btn-primary" id="btnNew" value="New Employee">
+			<input type="button" class="btn btn-warning" value="Modify Employee">
+			<input type="button" class="btn btn-danger" value="Delete Employee">
+		</div>
+		<form action="CreatePacienteServlet" class="" method="post">
+			<label for="id">Id</label><input type="number"  class="form-control" name="id" id="id" placeholder="000000">
+   			<label for="name">Name</label><input type="text"  class="form-control" name="name" id="name">
+    		<label for="lastname">Last Name</label> <input name="lastname"  class="form-control" id="lastname" type="text">
+			<input type="submit" value="pruebame" class="btn btn-danger">
+		</form>
+	</div>
+	<script src="JS/jquery.js"></script>
+	<script src="JS/bootstrap.min.js"></script>
+	<script src="JS/script.js"></script>
+</body>
+</html>
