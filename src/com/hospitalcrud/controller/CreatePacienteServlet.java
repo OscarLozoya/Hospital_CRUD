@@ -34,11 +34,6 @@ public class CreatePacienteServlet extends HttpServlet {
 		objP.setName(request.getParameter("name"));
 		objP.setLastName(request.getParameter("lastname"));
 		response.getWriter().append("Hola mundano "+objP.getIdPaciente()+" "+objP.getName());
-		
-		Configuration cfg = new Configuration();
-		cfg.configure("hibernate.cfg.xml");
-		cfg.addAnnotatedClass(com.hospitalcrud.model.Paciente.class);
-		
 
 		Configuration cgf = new Configuration();
 		cgf.configure("hibernate.cfg.xml");
